@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="{% static 'styles/stylesheets10.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body style="background: url({% static 'images/indexpage.jpg' %}); background-size: cover; background-repeat: no-repeat;position: center">
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>PU hostels</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/myapp/StudentLogout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<main>
+  <div class="row">
+      <div class="col-3">
+          <div class="vnav">
+              <ul class="nav flex-column dashbrd">
+              <li class="nav-item">
+                <a class="nav-link " href="/myapp/studenthome">Hostel registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/hosteldetails">Hostel details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Mess details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/feedetails">Fee details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/addfeedback">Add feedbacks</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-9" style="background: rgba(255, 255, 255, 0.5)">
+      <h1 style="font-size: 60px; text-decoration: underline">hostel details</h1>
+          {% if searched %}
+            <h2>you searched for <h1 style="color: black">"{{ searched }}"</h1></h2>
+            <br>
+            <h4 style="color: blue; font-size: 30px;">Name: <span style="color: black">{{ name }}</span></h4>
+               <h4 style="color: red; font-size: 30px;">Mess Name: <span style="color: red">{{ mess }}</span></h4>
+              <h4 style="color: blue; font-size: 30px;">Email : <span style="color: black">{{ email }}</span></h4>
+               <h4 style="color: blue; font-size: 30px;">Semester: <span style="color: black">{{ semester }}</span></h4>
+              <h4 style="color: blue; font-size: 30px;">Contact: <span style="color: black">{{ contact }}</span></h4>
+
+        {% endif %}
+      <p style="font-size: 35px; color: red">{{ incorrect }}</p>
+      </div>
+  </div>
+</main>
+<footer class="page-footer font-small blue pt-4 foot">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <h5 class="text-uppercase">Pondicherry central university Hostel</h5>
+        <p>Our aim is to provide good atmoshere for students to study.</p>
+        <p>We will be there to guide you to success. be our hostel inmate enjoy your campuus life. </p>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h5 class="text-uppercase">Connect with  Us On</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" style="color: deepskyblue"><i class="fab fa-twitter-square"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#" style="color: white"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h5 class="text-uppercase">For more queries contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" style="color: white">+91 9123547896</a>
+          </li>
+          <li>
+            <a href="#" style="color: white">+91 8123547895</a>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="#">PU UniversityHostrel.in</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

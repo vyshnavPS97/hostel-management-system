@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+.navbar-brand h2{
+    font-family: "American Captain";
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: white;
+    font-weight: 800;
+}
+.navbar-nav{
+    padding-right: 150px;
+}
+.nav-item{
+    padding-top: 0px;
+    padding-right: 30px;
+    font-family: SansSerif;
+    font-weight: 800;
+    font-size: 25px;
+}
+.nav-item:hover{
+    font-size: 30px;
+}
+.dropdown-menu .dropdown-item{
+    font-family:SansSerif ;
+    font-size: 25px;
+    font-weight: 800;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: black;
+    color: white;
+}
+.colleges{
+    padding-left: 20px;
+    padding-top: 40px;
+
+}
+.colleges .college {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/clg2.jpg);
+    background-size: cover;
+    border-radius: 45px;
+
+}
+.colleges .college .note .descp{
+    padding: 50px;
+    padding-bottom: 0px;
+    color: white;
+    font-family: SansSerif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.colleges .college .note .descp .under{
+    text-decoration: underline;
+}
+.colleges .college .note .descp2{
+    padding: 50px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: SansSerif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.colleges .quotes .quote{
+    padding-top: 120px;
+    padding-left: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 70px;
+}
+.foot{
+    background:black;
+    color:white;
+}
+.admlog{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.admlog .ads {
+    background: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    text-transform: uppercase;
+    padding: 60px;
+    text-align: center;
+    border-radius: 40px;
+}
+.admlog .adm{
+    background: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-transform: uppercase;
+    padding: 60px;
+    text-align: center;
+    border-radius: 40px;
+}
+.admlog .ads p {
+    font-size: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: white;
+}
+.admlog .ads p {
+    font-size: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: white;
+}
+.admlog .adm p{
+    font-size: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: white;
+}
+.admlog .ads a{
+    color: white;
+    font-size: 25px;
+}
+.admlog .adm a{
+    color: white;
+    font-size: 25px;
+}
+.admlog .ads h1{
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    text-align: center;
+    color: black;
+
+}
+.admlog .adm h1{
+    font-size: 50px;
+    border-bottom: 5px solid white;
+    text-align: center;
+    color: white;
+
+}
+.admlog .ads .textbox{
+    padding: 15px;
+}
+.admlog .adm .textbox{
+    padding: 15px;
+}
+.admlog .ads .textbox input{
+    font-size: 20px;
+    color:black;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    border-bottom: 2px solid black;
+
+}
+.admlog .adm .textbox input{
+    font-size: 20px;
+    color:white;
+    background: none;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    border-bottom: 2px solid white;
+
+}
+.admlog .ads .textbox i{
+    font-size: 20px;
+    color: black;
+
+}
+.admlog .adm .textbox i{
+    font-size: 20px;
+    color: white;
+
+}
+.dashbrd{
+    background: rgba(0, 0, 0, 0.5);
+    height: 800px;
+}
+.dashbrd .nav-item .nav-link{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+}
+.dashbrd .nav-item .nav-link:hover{
+    background: white;
+    color: black;
+    border-radius: 10px;
+
+}
+.dashbrd .nav-item .active{
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+.admindesc h1{
+    color: white;
+    font-size: 80px;
+}
+.admindesc h2{
+    color: white;
+    font-size: 40px;
+}
+.tabledata{
+    width: 700px;
+}
+.tabledatas{
+    width: 1200px;
+    padding-top: 5px;
+}
+.tabledata th{
+    font-size: 30px;
+}
+.tabledatas th{
+    font-size: 20px;
+}
+.tabledatas td{
+    font-size: 15px;
+}
+.tabledata td{
+    font-size: 20px;
+}
+.tabledatas h1{
+    color: white;
+    font-size: 35px;
+}
+.tabledata h1{
+    color: white;
+    font-size: 35px;
+}
+ .addhostel{
+    color: white;
+    font-size: 25px;
+}
+.addho{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.hostelreg{
+    color: white;
+}
